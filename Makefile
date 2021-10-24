@@ -2,7 +2,7 @@ phpstan:
 	vendor/bin/phpstan analyse
 
 phpcs:
-	vendor/bin/phpcs --standard=phpcs.xml
+	vendor/bin/phpcs
 
 psalm:
 	vendor/bin/psalm
