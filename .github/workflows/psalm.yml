@@ -1,4 +1,4 @@
-name: PHPstan
+name: psalm
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
       - '**.php'
 
 jobs:
-  phpstan:
+  psalm:
 
     runs-on: ubuntu-latest
 
@@ -24,4 +24,4 @@ jobs:
         run: composer install --prefer-dist --no-progress --no-suggest
 
       - name: Detecting PHP Code Standards Violations
-        run: make phpstan
+        run: make psalm
