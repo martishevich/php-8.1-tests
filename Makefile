@@ -1,5 +1,5 @@
 phpstan:
-	vendor/bin/phpstan analyse
+	vendor/bin/phpstan analyse --memory-limit=2G
 
 phpcs:
 	vendor/bin/phpcs
